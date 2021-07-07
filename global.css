@@ -14,3 +14,8 @@ body {
 p {
     font-size: 16px;
 }
+
+.form-section-heading {
+    font-size: 28px;
+    font-weight: 600;
+}
