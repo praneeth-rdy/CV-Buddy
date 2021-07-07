@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 
 .iitm-cv-container {
     display: flex;
     flex-direction: column;
-    font-family: 'Varela Round', sans-serif;
+    font-family: "Varela Round", sans-serif;
     padding: 4vw;
     font-size: 16px;
 }
@@ -11,8 +11,8 @@
 .iitm-cv-container .section-heading {
     font-size: 24px;
     font-weight: 600;
-    color: #0D8FCD;
-    border-bottom: 1px solid #0D8FCD;
+    color: #0d8fcd;
+    border-bottom: 1px solid #0d8fcd;
     margin: 0;
     margin-top: 20px;
 }
@@ -26,11 +26,11 @@ Table Styling Start
 }
 
 .iitm-cv-container table .table-header {
-    border-bottom: 1px solid #0D8FCD;
+    border-bottom: 1px solid #0d8fcd;
 }
 
 .iitm-cv-container table .table-header th {
-    color: #0D8FCD;
+    color: #0d8fcd;
     font-weight: 100;
     font-size: 18px;
 }
@@ -38,7 +38,6 @@ Table Styling Start
 /*
 Table Styling End
 */
-
 
 /*
 List Styling Start
@@ -52,12 +51,12 @@ List Styling Start
 
 .iitm-cv-container ul li.heading {
     font-weight: bold;
-    margin-left: 0;
+    margin: 0;
     padding-left: 0;
 }
 
 .iitm-cv-container ul li.heading::marker {
-    content: '';
+    content: "";
 }
 
 .iitm-cv-container ul li {
@@ -65,9 +64,10 @@ List Styling Start
     padding-left: 5px;
 }
 
-.iitm-cv-container ul li::marker, .list-table tr td::before {
-    content: '\25cb';
-    color: #0D8FCD;
+.iitm-cv-container ul li::marker,
+.list-table tr td::before {
+    content: "\25cb";
+    color: #0d8fcd;
     font-size: 16px;
 }
 
@@ -78,7 +78,6 @@ List Styling Start
 /*
 List Styling End
 */
-
 
 /*
 Header Section Start
@@ -92,12 +91,12 @@ Header Section Start
 .iitm-cv-container .header h1 {
     font-size: 38px;
     font-weight: 100;
-    color: #B7BECE;
+    color: #b7bece;
 }
 
 .iitm-cv-container .header .name {
     font-size: 38px;
-    color: #0D8FCD;
+    color: #0d8fcd;
     font-weight: 600;
 }
 
@@ -128,9 +127,13 @@ Projects Section Start
     justify-content: space-between;
 }
 
+.iitm-cv-container .projects ul li.heading span:nth-child(1) {
+    display: flex;
+}
+
 .iitm-cv-container .projects ul li.heading span:nth-child(1) .timeline {
     font-weight: normal;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 .iitm-cv-container .projects ul li.heading span:nth-child(2) {
