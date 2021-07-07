@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    background-color: #fff;
+    color: #3D3D3D;
+}
+
+p {
+    font-size: 16px;
+}
