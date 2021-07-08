@@ -140,3 +140,24 @@ Projects Section Start
     font-weight: normal;
     font-style: italic;
 }
+
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    .cv-to-print {
+        display: block!important;
+    }
+
+    #iitm-cv, #iitm-cv * {
+        visibility: visible;
+    }
+
+    #iitm-cv {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
