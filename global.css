@@ -8,14 +8,50 @@
 
 body {
     background-color: #fff;
-    color: #3D3D3D;
+    color: #3d3d3d;
 }
 
 p {
     font-size: 16px;
 }
 
+.main-container > .section-seperator {
+    margin: 0;
+}
+
 .form-section-heading {
     font-size: 28px;
     font-weight: 600;
+}
+
+.cv-container {
+    width: 100%;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cv-container a {
+    color: #3d3d3d;
+    text-decoration: underline;
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    .cv-to-print {
+    }
+
+    #cv,
+    #cv * {
+        visibility: visible;
+    }
+
+    #cv {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
 }

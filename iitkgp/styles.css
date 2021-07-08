@@ -1,2 +1,148 @@
-@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 
+.iitkgp-cv-container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    padding: 2vw;
+    font-size: 16px;
+    color: #000;
+}
+
+.iitkgp-cv-container .section-heading {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+    border-top: 1px solid #b7bece;
+    border-bottom: 1px solid #b7bece;
+    background-color: #dce1e2;
+    padding: 2px;
+    margin: 0;
+    margin-top: 10px;
+}
+
+/*
+Table Styling Start
+*/
+
+.iitkgp-cv-container table {
+    width: 100%;
+}
+
+.iitkgp-cv-container table .table-header {
+}
+
+.iitkgp-cv-container table tr td {
+    padding: 0 10px 0 0;
+}
+
+.iitkgp-cv-container table .table-header th {
+    color: #000;
+    font-weight: bold;
+}
+
+/*
+Table Styling End
+*/
+
+/*
+List Styling Start
+*/
+
+.iitkgp-cv-container ul {
+    list-style-type: circle;
+    list-style-position: outside;
+    margin-bottom: 0;
+}
+
+.iitkgp-cv-container ul li.heading {
+    font-weight: bold;
+    margin: 0;
+    padding-left: 0;
+}
+
+.iitkgp-cv-container ul li.heading::marker {
+    content: "";
+}
+
+.iitkgp-cv-container ul li {
+    margin-left: 8px;
+    padding-left: 5px;
+}
+
+.iitkgp-cv-container ul li::marker,
+.list-table tr td::before {
+    content: "\25cb";
+    color: #000;
+    font-size: 16px;
+}
+
+.list-table tr td::before {
+    margin-right: 5px;
+}
+
+/*
+List Styling End
+*/
+
+/*
+Header Section Start
+*/
+.iitkgp-cv-container .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.iitkgp-cv-container .header h1 {
+    font-size: 26px;
+    color: #000;
+    font-weight: 600;
+}
+
+.iitkgp-cv-container .header .name {
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.iitkgp-cv-container .header .roll {
+    font-size: 26px;
+}
+
+.iitkgp-cv-container .header .campus {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.iitkgp-cv-container .header img {
+    width: 90px;
+}
+
+/*
+Header Section End
+*/
+
+/*
+Projects Section Start
+*/
+
+.iitkgp-cv-container .projects ul li.heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.iitkgp-cv-container .projects ul li.heading span:nth-child(1) {
+    display: flex;
+}
+
+.iitkgp-cv-container .projects ul li.heading span:nth-child(1) .timeline {
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+.iitkgp-cv-container .projects ul li.heading span:nth-child(2) {
+    font-weight: normal;
+    font-style: italic;
+}
