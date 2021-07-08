@@ -2,7 +2,7 @@
 .cv-list-section h1 {
     font-size: 28px;
     font-weight: bold;
-    margin: 5vw 0;
+    margin: 3vw 0;
     border-bottom: 1px solid rgb(212, 212, 212);
 }
 
@@ -11,4 +11,12 @@
     height: 100%;
     display: flex;
     align-items: center;
+}
+
+.form-section .section-heading {
+    font-size: 32px;
+    font-weight: 600;
+    border-bottom: 1px solid rgb(212, 212, 212);
+    margin-top: 5vw;
+    margin-bottom: 3vw;
 }

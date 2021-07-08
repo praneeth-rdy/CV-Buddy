@@ -8,9 +8,8 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
     integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
     crossorigin="anonymous"></script>
@@ -24,27 +23,79 @@
 
 <body>
   <div class="main-container">
+    <div id="page-status" class="alert alert-success d-none justify-content-between pl-4 pr-4 align-items-center"
+      role="alert">
+      <span></span>
+      <i class="fa fa-times" onclick="toggleFormStatusDisplay('hide')"></i>
+    </div>
     <div class="cv-list-section container my-4 py-4">
       <div class="row">
-        <h1 class="col-12">IIT CV Templates</h1>
+        <h1 class="col-12">CV Templates</h1>
       </div>
       <div class="row">
         <div class="col-4">
-          <a class="btn btn-primary iits-cv-btn" href="./iitm/index.html">
-            IIT Madras CV Template
+          <a class="btn btn-primary iits-cv-btn" href="./iitkgp/index.html">
+            Template-1
           </a>
         </div>
         <div class="col-4">
-          <a class="btn btn-primary iits-cv-btn" href="./iitkgp/index.html">
-            IIT Kharagpur CV Template
+          <a class="btn btn-primary iits-cv-btn" href="./iitm/index.html">
+            Template-2
           </a>
         </div>
         <div class="col-4">
           <a class="btn btn-primary iits-cv-btn" href="./iitb/index.html">
-            IIT Bombay CV Template
+            Template-3
           </a>
         </div>
       </div>
+    </div>
+    <div class="form-section container">
+      <h1 class="section-heading">Contribute your part, by filling this feedback form</h1>
+      <form id="ajax-form" autocomplete="on"
+        data-id="AKfycbzZZy0EognH5aUyPpTo76O-Llct5ovCngguEK7UdvpXID7TzZRqNxy7lbqchEZGMpWX7w">
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="name">Name (optional)</label>
+            <input type="name" class="form-control" id="name" name="name" placeholder="Enter name">
+            <!-- <div class="valid-feedback">
+                    Looks good!
+                  </div> -->
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="mobile">Mobile Number (optional)</label>
+            <input type="tel" class="form-control" id="mobile" name="mobile" placeholder="Enter mobile number">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="email">Email (optional)</label>
+            <!-- <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                    </div> -->
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+            <!-- <div class="invalid-feedback">
+                      Please choose a username.
+                    </div> -->
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="subject">Subject</label>
+            <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter subject" required>
+            <!-- <div class="valid-feedback">
+                    Looks good!
+                  </div> -->
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-12 mb-3">
+            <label for="message">Feedback</label>
+            <textarea class="form-control" id="message" name="message" rows="6"
+              placeholder="How useful is this platform for you? Do you want more CV templates to be added here? What are the changes you want to see in the future updates? Did you find any bugs? or have faced any issue while using the cv templates?"
+              required></textarea>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit form</button>
+      </form>
     </div>
   </div>
   <script type="text/javascript" src="./global.js"></script>
