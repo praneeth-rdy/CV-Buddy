@@ -115,19 +115,21 @@ Header Section End
 */
 
 /*
-Projects Section Start
+Projects and POR Sections Start
 */
 
-.iitb-cv-container .projects ul li.heading {
+.iitb-cv-container .projects ul li.heading, .iitb-cv-container .pors ul li.heading {
     display: flex;
     justify-content: space-between;
 }
 
-.iitb-cv-container .projects ul li.heading span:nth-child(1) {
+.iitb-cv-container .projects ul li.heading span:nth-child(1),
+.iitb-cv-container .pors ul li.heading span:nth-child(1) {
     display: flex;
 }
 
-.iitb-cv-container .projects ul li.heading span:nth-child(1) .timeline {
+.iitb-cv-container .projects ul li.heading span:nth-child(1) .timeline,
+.iitb-cv-container .pors ul li.heading span:nth-child(1) .society {
     font-weight: normal;
     margin-left: 10px;
 }
@@ -139,26 +141,12 @@ Projects Section Start
 
 
 /*
-Projects Section End
+Projects and POR Sections End
 */
 
 /*
 PORs Section Start
 */
-
-.iitb-cv-container .pors ul li.heading {
-    display: flex;
-    justify-content: space-between;
-}
-
-.iitb-cv-container .pors ul li.heading span:nth-child(1) {
-    display: flex;
-}
-
-.iitb-cv-container .pors ul li.heading span:nth-child(1) .society {
-    font-weight: normal;
-    margin-left: 10px;
-}
 
 .iitb-cv-container .pors ul li.heading span:nth-child(2) {
     font-weight: normal;

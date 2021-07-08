@@ -119,19 +119,21 @@ Header Section End
 */
 
 /*
-Projects Section Start
+Projects and POR Sections Start
 */
 
-.iitm-cv-container .projects ul li.heading {
+.iitm-cv-container .projects ul li.heading, .iitm-cv-container .pors ul li.heading {
     display: flex;
     justify-content: space-between;
 }
 
-.iitm-cv-container .projects ul li.heading span:nth-child(1) {
+.iitm-cv-container .projects ul li.heading span:nth-child(1),
+.iitm-cv-container .pors ul li.heading span:nth-child(1) {
     display: flex;
 }
 
-.iitm-cv-container .projects ul li.heading span:nth-child(1) .timeline {
+.iitm-cv-container .projects ul li.heading span:nth-child(1) .timeline,
+.iitm-cv-container .pors ul li.heading span:nth-child(1) .society {
     font-weight: normal;
     margin-left: 10px;
 }
@@ -139,4 +141,16 @@ Projects Section Start
 .iitm-cv-container .projects ul li.heading span:nth-child(2) {
     font-weight: normal;
     font-style: italic;
+}
+
+/*
+Projects and POR Sections End
+*/
+
+/*
+PORs Section Start
+*/
+
+.iitm-cv-container .pors ul li.heading span:nth-child(2) {
+    font-weight: normal;
 }
