@@ -1,6 +1,4 @@
 
-let cv = document.getElementById('cv');
-
 function initCv() {
     cvData = JSON.parse(localStorage.getItem('iitmCvData'));
     if(cvData){
@@ -9,6 +7,11 @@ function initCv() {
 }
 
 initCv();
+
+$('#saveCv').on('click', (event) => {
+    cv.removeAttribute('contenteditable');
+    localStorage.setItem('iitmCvData', JSON.stringify(cv.innerHTML));
+});
 
 $('#resetCv').on('click', (event) => {
     localStorage.removeItem('iitmCvData');
