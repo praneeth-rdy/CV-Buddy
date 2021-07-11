@@ -5,14 +5,14 @@
 </p>
 
 <p align="center">
-    <a href="https://praneeth-rdy.github.io/cvGenerator">
-        <img src="https://img.shields.io/website?down_color=lightgrey&down_message=down&up_color=%231e90ff&up_message=live&url=https%3A%2F%2Fpraneeth-rdy.github.io%2F/cvGenerator%2F"/>
+    <a href="https://praneeth-rdy.github.io/CV-Buddy">
+        <img src="https://img.shields.io/website?down_color=lightgrey&down_message=down&up_color=%231e90ff&up_message=live&url=https%3A%2F%2Fpraneeth-rdy.github.io%2F/CV-Buddy%2F"/>
     </a>
-    <a href="https://github.com/praneeth-rdy/cvGenerator/issues">
-      <img alt="Issues" src="https://img.shields.io/github/issues/praneeth-rdy/cvGenerator?color=0088ff" />
+    <a href="https://github.com/praneeth-rdy/CV-Buddy/issues">
+      <img alt="Issues" src="https://img.shields.io/github/issues/praneeth-rdy/CV-Buddy?color=0088ff" />
     </a>
-    <a href="https://github.com/praneeth-rdy/cvGenerator/pulls">
-      <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/praneeth-rdy/cvGenerator?color=0088ff" />
+    <a href="https://github.com/praneeth-rdy/CV-Buddy/pulls">
+      <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/praneeth-rdy/CV-Buddy?color=0088ff" />
     </a>
 </p>
 
@@ -70,13 +70,13 @@ A list of commonly used resources that I find helpful are listed in the acknowle
 ## Getting Started
 
 You won't be needing to download or install anything, to get started with this project.
-Just visit [https://praneeth-rdy.github.io/cvGenerator](https://praneeth-rdy.github.io/cvGenerator) and play with editor. That's as simple as that!
+Just visit [https://praneeth-rdy.github.io/CV-Buddy](https://praneeth-rdy.github.io/CV-Buddy) and play with editor. That's as simple as that!
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-- Open the website [https://praneeth-rdy.github.io/cvGenerator](https://praneeth-rdy.github.io/cvGenerator).
+- Open the website [https://praneeth-rdy.github.io/CV-Buddy](https://praneeth-rdy.github.io/CV-Buddy).
 - You will be displayed multiple CV templates. Select a template you like.
 - Click on edit. Now you can edit the content of the CV directly. 
 - Remove the campus logo, if you are not a kgpian.
@@ -120,7 +120,7 @@ Distributed under the GNU GPL v3.0 License. See `LICENSE` for more information.
 
 Praneeth Reddy Kolanu - [@praneeth-rdy](https://www.facebook.com/praneeth.reddy.3557440) - praneeth.kolanu.iitkgp@gmail.com
 
-Project Link: [https://github.com/praneeth-rdy/cvGenerator](https://github.com/praneeth-rdy/cvGenerator)
+Project Link: [https://github.com/praneeth-rdy/CV-Buddy](https://github.com/praneeth-rdy/CV-Buddy)
 
 
 <!-- ACKNOWLEDGEMENTS -->
