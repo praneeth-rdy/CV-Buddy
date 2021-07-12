@@ -1,11 +1,10 @@
 
 ## Issue and PR Templates
 
-1. Read the [issue](./issue_template.md) and [pull request](./pull_request_template.md) templates.
+1. Follow the [issue](./issue_template.md) and [pull request](./pull_request_template.md) templates.
 
 
-## CV Code Template and File Structure
+## File Structure and CV Code Template
 
-1. Use the template dir to add a new cv template to the collection
-2. Follow the same formatting of code and file name conventions
-3. Do not deviate from the template
+1. Use the /template directory to add a new cv template to the collection.
+2. Follow the file structure, code formatting and file naming conventions.

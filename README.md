@@ -1,6 +1,6 @@
 <p align="center">
  <img width="100px" src="./img/readme/project_logo.png" align="center" alt="GitHub Readme Stats" />
- <h2 align="center">CV Generator</h2>
+ <h2 align="center">CV Buddy</h2>
  <p align="center">Build your cv instantly on the go!</p>
 </p>
 
@@ -107,6 +107,7 @@ Contributions are what make the open source community such an amazing place to b
 1. Go to the issues tab and check if there's any existing issue with similar lines.
 2. If there's no existing issue, create an issue following [this](issue_template.md) template.
 
+#### Refer to [CONTRIBUTING.md](CONTRIBUTING.md) for other instructions.
 
 <!-- LICENSE -->
 ## License
