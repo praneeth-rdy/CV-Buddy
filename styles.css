@@ -1,3 +1,7 @@
+.main-container {
+    min-height: 100vh;
+}
+
 
 .cv-list-section h1 {
     font-size: 28px;
