@@ -84,7 +84,8 @@ Header Section Start
 */
 .iitm-cv-container .header {
     display: flex;
-    flex-direction: row;
+  /*  flex-direction: row; */
+  flex-direction: column;
     justify-content: space-between;
 }
 
@@ -118,6 +119,46 @@ Header Section Start
 Header Section End
 */
 
+/* Contact Details start */
+
+.contactDetails-2{
+display: flex;
+text-align: center;
+font-weight: 700;
+}
+
+.contactDetails-2 a{
+    text-decoration: none;
+    padding: 3px;
+    margin-top: 2px;
+}
+
+.contactDetails-2 a:hover{
+    color: green;
+}
+
+@media screen and (max-width: 480px){
+    .iitm-cv-container .header img{
+        width: 100px;
+    }
+    .contactDetails-2{
+        display: block;
+    }
+    .contactDetails-2 a{
+        padding: 5px;
+    }
+    .iitm-cv-container .header .campus{
+        font-size: 18px;
+    }
+}
+
+/* Contact Details ends */
+
+.logo-2{
+    position: absolute;
+    top: 5px;
+    right: 1px;
+}
 /*
 Projects and POR Sections Start
 */

@@ -23,6 +23,27 @@
     margin-top: 10px;
 }
 
+/* Contact details starts */
+
+.contactDetails-1{
+    display: flex;
+    text-align: center;
+    font-weight: 700;
+    word-spacing: 5px;
+}
+
+.contactDetails-1 a{
+text-decoration: none;
+outline: none;
+
+}
+
+.contactDetails-1 a:hover{
+    color: green;
+}
+
+/* Contact details ends */
+
 /*
 Table Styling Start
 */
@@ -93,8 +114,11 @@ Header Section Start
 */
 .iitkgp-cv-container .header {
     display: flex;
-    flex-direction: row;
+  /*  flex-direction: row;
     justify-content: space-between;
+    */
+    flex-direction: column;
+    justify-content: center;
 }
 
 .iitkgp-cv-container .header h1 {
