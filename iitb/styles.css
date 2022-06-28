@@ -114,6 +114,24 @@ Header Section Start
 Header Section End
 */
 
+/* Contact details starts */
+
+
+.contactDetails-3 a{
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+    padding: 2px;
+    color: whitesmoke;
+}
+
+.contactDetails-3 a:hover{
+    color: green;
+}
+
+/* Contact details ends */
+
+
 /*
 Projects and POR Sections Start
 */
