@@ -87,6 +87,7 @@ Header Section Start
   /*  flex-direction: row; */
   flex-direction: column;
     justify-content: space-between;
+    position: relative;
 }
 
 .iitm-cv-container .header h1 {
@@ -111,9 +112,16 @@ Header Section Start
     font-weight: 600;
 }
 
-.iitm-cv-container .header img {
+.main-header2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.iitm-cv-container .main-header2 img {
     width: 150px;
 }
+
 
 /*
 Header Section End
@@ -154,11 +162,11 @@ font-weight: 700;
 
 /* Contact Details ends */
 
-.logo-2{
+/*.logo-2{
     position: absolute;
     top: 5px;
     right: 1px;
-}
+} */
 /*
 Projects and POR Sections Start
 */

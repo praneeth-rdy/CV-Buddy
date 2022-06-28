@@ -120,8 +120,9 @@ Header Section End
 .contactDetails-3 a{
     text-decoration: none;
     display: block;
-    font-weight: 700;
+    font-weight: bold;
     padding: 2px;
+    color: whitesmoke;
 }
 
 .contactDetails-3 a:hover{
