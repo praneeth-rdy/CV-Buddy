@@ -9,6 +9,23 @@
     color: #000;
 }
 
+  .vibrant-text {
+    text-align: center;
+    font-size: 18px;
+   
+    animation: colorAnimation 3s infinite;
+  }
+
+  @keyframes colorAnimation {
+    0% { color: #4d4d4d; }      /* Dark gray */
+    25% { color: #000000; }     /* Black */
+    50% { color: #ff0000; }     /* Red */
+    75% { color: #0000ff; }     /* Blue */
+    100% { color: #ff0000; }    /* Dark gray */
+  }
+  
+
+
 .iitkgp-cv-container .section-heading {
     font-size: 20px;
     font-weight: bold;

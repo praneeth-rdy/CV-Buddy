@@ -18,6 +18,7 @@
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/5f59ca6ad3.js" crossorigin="anonymous"></script>
+ 
   <link rel="stylesheet" type="text/css" href="../global.css">
   <link rel="stylesheet" type="text/css" href="./styles.css">
 </head>
@@ -30,6 +31,11 @@
       <button id="saveCv" class="btn btn-primary mx-2">Save</button>
       <button id="resetCv" class="btn btn-danger mx-2">Reset</button>
       <button id="printCv" class="btn btn-success mx-2">Download</button>
+      <button id="toggleButton" onclick="toggleImageContent()" class="btn btn-secondary mx-2">No Img</button>
+      
+    </div>
+    <div class="vibrant-text">
+      Click on profile to change it
     </div>
     <hr class="section-separator" />
     <div id="cv" class="iitkgp-cv-container cv-container">
@@ -41,7 +47,9 @@
           <h1><span class="name">Shekar Reddy</span> | <span class="roll">19XY10017</span></h1>
           <h2 class="campus">Indian Institute of Technology Kharagpur</h2>
         </div>
-        <div>
+        <div id="imageDiv">
+          <img id="previewImage" src="../img/ProfileImg/gaurav photo.jpeg" />
+          <input type="file" id="imageInput" style="display: none;" />
         </div>
       </div>
       <div class="education">
@@ -302,6 +310,41 @@
   </div>
   <script type="text/javascript" src="../global.js"></script>
   <script type="text/javascript" src="./main.js"></script>
+  <script>
+    const imageDiv = document.getElementById('imageDiv');
+    const imageInput = document.getElementById('imageInput');
+    const previewImage = document.getElementById('previewImage');
+  
+    imageDiv.addEventListener('click', function() {
+      imageInput.click();
+      console.log("imageDivpressed");
+    });
+  
+    imageInput.addEventListener('change', function() {
+      const file = imageInput.files[0];
+      const reader = new FileReader();
+  
+      reader.onload = function(e) {
+        previewImage.src = e.target.result;
+      };
+  
+      reader.readAsDataURL(file);
+    });
+  </script>
+    <script>
+      function toggleImageContent() {
+        const toggleButton = document.getElementById('toggleButton');
+        const previewImage = document.getElementById('previewImage');
+  
+        if (toggleButton.innerHTML === 'No Img') {
+          toggleButton.innerHTML = 'Need Img';
+          previewImage.style.display = 'none';
+        } else {
+          toggleButton.innerHTML = 'No Img';
+          previewImage.style.display = 'block';
+        }
+      }
+    </script>
 </body>
 
 </html>
