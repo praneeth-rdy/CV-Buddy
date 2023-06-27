@@ -11,9 +11,9 @@
 
   .vibrant-text {
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
    
-    animation: colorAnimation 3s infinite;
+    /* animation: colorAnimation 3s infinite; */
   }
 
   @keyframes colorAnimation {
