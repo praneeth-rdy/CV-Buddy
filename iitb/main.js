@@ -10,10 +10,18 @@ initCv();
 
 $('#saveCv').on('click', (event) => {
     cv.removeAttribute('contenteditable');
+    var editMessageElement = document.getElementsByClassName('edit-message')[0];
+    var greenTextElement = editMessageElement.querySelector('p');
+
+    if (greenTextElement) {
+        editMessageElement.removeChild(greenTextElement);
+    }
     localStorage.setItem('iitbCvData', JSON.stringify(cv.innerHTML));
 });
 
 $('#resetCv').on('click', (event) => {
-    localStorage.removeItem('iitbCvData');
-    location.reload();
+    if(confirm('Are you sure you want to reset your CV?')){
+        localStorage.removeItem('iitbCvData');
+        location.reload();
+    }
 });
