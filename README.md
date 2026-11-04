@@ -1,144 +1,84 @@
-<p align="center">
- <img width="100px" src="./img/readme/project_logo.png" align="center" alt="GitHub Readme Stats" />
- <h2 align="center">CV Buddy</h2>
- <p align="center">Build your cv instantly on the go!</p>
-</p>
+# CV Buddy
 
-<p align="center">
-    <a href="https://praneeth-rdy.github.io/CV-Buddy">
-        <img src="https://img.shields.io/website?down_color=lightgrey&down_message=down&up_color=%231e90ff&up_message=live&url=https%3A%2F%2Fpraneeth-rdy.github.io%2F/CV-Buddy%2F"/>
-    </a>
-    <a href="https://github.com/praneeth-rdy/CV-Buddy/issues">
-      <img alt="Issues" src="https://img.shields.io/github/issues/praneeth-rdy/CV-Buddy?color=0088ff" />
-    </a>
-    <a href="https://github.com/praneeth-rdy/CV-Buddy/pulls">
-      <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/praneeth-rdy/CV-Buddy?color=0088ff" />
-    </a>
-</p>
+A free, open-source CV editor built with HTML, CSS, and JavaScript. Edit the final document directly in your browser, then save it as a PDF. No account or installation is required to use the website.
 
-<!-- TABLE OF CONTENTS -->
-<details open="open">
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <!-- <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul> -->
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li>
-        <a href="#contributing">Contributing</a>
-        <ul>
-            <li>
-                <a href="#creating-a-pull-request">Creating a Pull Request</a>
-            </li>
-            <li>
-                <a href="#creating-an-issue">Creating an Issue</a>
-            </li>
-        </ul>
-    </li>
-    <li><a href="#developer-documentation">Developer Documentation</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
-  </ol>
-</details>
+[Open CV Buddy](https://praneeth-rdy.github.io/CV-Buddy/) · [Documentation](docs/README.md) · [Report an issue](https://github.com/praneeth-rdy/CV-Buddy/issues)
 
+## Using the editor
 
+1. Choose a template. Each starts with a fictional sample profile; replace it with your own details.
+2. Click directly on the CV to edit. Enter continues a bullet list, formatted blocks can be copied and pasted, and native formatting and undo shortcuts work throughout the document.
+3. Open **Options** to change the font or choose a **Small**, **Medium**, or **Large** text style. Each style adjusts titles, headings, tables, and body text together. Photo and institute-logo controls appear where supported.
+4. Check the toolbar's save status. Content and typography settings save automatically in this browser.
+5. Select **Print / Save PDF**, choose A4, and turn off browser headers and footers. Check the page breaks before exporting; longer CVs can span multiple pages.
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+The CV stays editable at all times. It automatically fits the available screen width, and its document typography, colors, width, and padding are shared with print output.
 
+**Options → Editing help & shortcuts** explains bold, italic, underline, undo/redo, list editing, and block copy/paste. It also includes optional guidance for using a browser assistant to help draft content. CV Buddy does not require an AI service.
 
-There are many CV builders available on the internet, however, I didn't find one that really suits my needs. I wanted to create a CV builder which is very simple to use and also has some standard templates in it, to start with. One of the most important things is that, this is an opensource project. "For the community and by the community" is what it makes powerful. Even if you aren't a developer, you can contribute to this project by filling out the feedback/suggestion form which is avalable on the home page.
+## Templates
 
-Checkout the [contributing](#contributing) section, if you are a developer.
+Each template offers three font choices and its own recommended defaults for a new draft. Existing drafts retain their saved settings.
 
-<!-- Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should element DRY principles to the rest of your life :smile: -->
+| Template | Inspired by | Recommended size | Recommended font |
+| --- | --- | --- | --- |
+| [Classic](iitkgp/index.html) | IIT Kharagpur | Small | Open Sans |
+| [Contemporary](iitm/index.html) | IIT Madras | Medium | Arial |
+| [Editorial](iitb/index.html) | IIT Bombay | Medium | EB Garamond |
 
-You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people who have contributed to this project!
+Anyone can use these templates. They are not official institute documents. See the [documentation index](docs/README.md#current-template-defaults) for all font choices.
 
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
+## Saving and recovery
 
-<!-- GETTING STARTED -->
-## Getting Started
+There is one browser-local draft per template, with no cloud synchronization. Use the same browser profile and URL to return to it. Local files, localhost, and the hosted website may have separate storage. Clearing browser data can remove drafts, so export a PDF before clearing storage or moving devices.
 
-You won't be needing to download or install anything, to get started with this project.
-Just visit [https://praneeth-rdy.github.io/CV-Buddy](https://praneeth-rdy.github.io/CV-Buddy) and play with editor. That's as simple as that!
+- **Options → Save now** or **Ctrl/Cmd + S** inside the CV saves immediately.
+- **Options → Reset to sample** asks for confirmation, keeps a recovery copy, and restores the sample with its recommended typography.
+- **Options → Restore before last reset** recovers the previous content and typography. Only the most recent reset has a recovery copy.
 
-To work locally, open `index.html` directly in your browser. There is no build step or package installation. The homepage and CV editor run without a backend. Template fonts load from Google Fonts; sending feedback also requires an internet connection.
+If browser storage is unavailable or full, the editor shows a save failure. Keep the page open and export your work before troubleshooting. Updating a template's sample content does not replace an existing saved draft.
 
-Optionally, serve the repository with `python3 -m http.server 8000 --bind 127.0.0.1` and visit `http://127.0.0.1:8000`. Browser drafts may be stored separately for local files and server URLs. Keep using the same URL to return to a draft, and save a PDF before clearing browser data.
+## Running locally
 
+Clone or download the repository, then open [index.html](index.html) in your browser. There is no build step or package installation.
 
-<!-- USAGE EXAMPLES -->
-## Usage
+```sh
+git clone https://github.com/praneeth-rdy/CV-Buddy.git
+cd CV-Buddy
+```
 
-- Open the website [https://praneeth-rdy.github.io/CV-Buddy](https://praneeth-rdy.github.io/CV-Buddy).
-- Choose Classic, Contemporary, or Editorial. Each starts with a fictional sample profile.
-- Click text in the CV to replace it with your details. Changes save automatically in this browser; check the save status in the toolbar.
-- Edit the whole document naturally: Enter continues a bullet list, formatted blocks can be copied and pasted, and the browser's undo/redo and formatting shortcuts work directly in the CV.
-- Use Options to choose a font and a Small, Medium, or Large style. Each template recommends its own defaults; your choices save with the draft. Photo controls and the institute-logo toggle are also available where supported.
-- Open Options → Editing help & shortcuts for formatting keys, list editing, block copy/paste, and optional browser-assistant guidance.
-- Edit directly on the final CV layout; there is no separate preview mode or zoom control. The page fits the available screen width automatically, using the same document typography, colors, width, and padding as print.
-- Choose Print / Save PDF, select A4, and turn off browser headers and footers. Check the page breaks before saving; longer CVs can span multiple pages.
-- To start again, use Options → Reset to sample. Confirm the reset, or cancel to keep editing. Options → Restore before last reset recovers the previous draft.
-- Share feedback using the form on the homepage, or open an issue on GitHub.
+If you prefer a local HTTP server, run this from the repository root:
 
-Drafts are saved separately for each template. Existing saved drafts are retained when the sample profiles change. Browser storage is not a cloud backup and can become unavailable or full; the editor displays a warning if it cannot save.
+```sh
+python3 -m http.server 8000 --bind 127.0.0.1
+```
 
-<!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
+Visit [localhost](http://127.0.0.1:8000/) and stop the server with Ctrl + C when finished. A server is optional.
 
+Loading Google Fonts and sending feedback require an internet connection. Editing can work offline with fallback fonts. The feedback backend is external to this repository; see [Architecture](docs/ARCHITECTURE.md#feedback-and-external-services) for details.
 
-## Developer Documentation
+## Developer documentation
 
-Start with [docs/README.md](docs/README.md) for architecture, product decisions, local development, storage and print behavior, and the regression checklist. Contributors should read these guides before changing editor behavior.
+Start with [docs/README.md](docs/README.md). Before changing the editor, read the decisions and regression checks that preserve its native editing behavior and print fidelity.
 
-<!-- CONTRIBUTING -->
-## Contributing
+- [Product and UX decisions](docs/UX_DECISIONS.md)
+- [Architecture and saved-draft format](docs/ARCHITECTURE.md)
+- [Local development and adding templates](docs/DEVELOPMENT.md)
+- [Testing checklist](docs/TESTING.md)
+- [Contribution guidelines](docs/CONTRIBUTING.md)
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+## Contributing and feedback
 
-### Creating a Pull Request
+Use the feedback form on the homepage or [open an issue](https://github.com/praneeth-rdy/CV-Buddy/issues). Name, email, and mobile are optional in the form. Bug reports, suggestions, documentation improvements, and code contributions are welcome.
 
-1. Fork the Repo
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request and follow the given template [here](pull_request_template.md)
+For code changes, follow the [contribution guidelines](docs/CONTRIBUTING.md) and [pull request template](pull_request_template.md). Include what changed and how you checked it. Test feedback submissions with mocked requests rather than sending test messages to the live form endpoint.
 
-### Creating an Issue
+Maintained by [Praneeth Reddy Kolanu](https://github.com/praneeth-rdy).
 
-1. Go to the issues tab and check if there's any existing issue with similar lines.
-2. If there's no existing issue, create an issue following [this](issue_template.md) template.
-
-#### Refer to [CONTRIBUTING.md](docs/CONTRIBUTING.md) for other instructions.
-
-<!-- LICENSE -->
 ## License
 
-Distributed under the GNU GPL v3.0 License. See [LICENSE.md](LICENSE.md) for more information.
+Distributed under the GNU GPL v3.0 license. See [LICENSE.md](LICENSE.md).
 
-
-
-<!-- CONTACT -->
-## Contact
-
-Praneeth Reddy Kolanu - [@praneeth-rdy](https://www.facebook.com/praneeth.reddy.3557440) - praneeth.kolanu.iitkgp@gmail.com
-
-Project Link: [https://github.com/praneeth-rdy/CV-Buddy](https://github.com/praneeth-rdy/CV-Buddy)
-
-
-<!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [README Template by othneildrew](https://github.com/othneildrew/Best-README-Template)
-* [Img Shields](https://shields.io)
+
+The original README was based on [Best-README-Template](https://github.com/othneildrew/Best-README-Template). The project uses [GitHub Pages](https://pages.github.com/) for its public site and [Google Fonts](https://fonts.google.com/) for the original template fonts.
