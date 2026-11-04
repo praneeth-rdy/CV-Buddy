@@ -1,19 +1,14 @@
-
-function initCv() {
-    cvData = JSON.parse(localStorage.getItem('iitkgpCvData'));
-    if(cvData){
-        cv.innerHTML = cvData;
-    }
-}
-
-initCv();
-
-$('#saveCv').on('click', (event) => {
-    cv.removeAttribute('contenteditable');
-    localStorage.setItem('iitkgpCvData', JSON.stringify(cv.innerHTML));
-});
-
-$('#resetCv').on('click', (event) => {
-    localStorage.removeItem('iitkgpCvData');
-    location.reload();
+CVBuddyEditor.init({
+  storageKey: 'iitkgpCvData',
+  name: 'IIT Kharagpur',
+  typography: {
+    recommendedSize: 'small',
+    recommendedFont: 'open-sans',
+    legacyFont: 'open-sans',
+    fonts: [
+      { id: 'open-sans', label: 'Open Sans' },
+      { id: 'arial', label: 'Arial' },
+      { id: 'georgia', label: 'Georgia' }
+    ]
+  }
 });

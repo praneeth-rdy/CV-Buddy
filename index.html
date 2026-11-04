@@ -1,131 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home | CV Buddy</title>
-
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-    crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/5f59ca6ad3.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
-
-
-  <link rel="stylesheet" type="text/css" href="./global.css">
-  <link rel="stylesheet" type="text/css" href="./styles.css">
+  <meta name="description" content="CV Buddy is a free, open-source CV editor. Choose a template, edit your details, and save a PDF.">
+  <meta name="theme-color" content="#214f40">
+  <title>CV Buddy — Free, open-source CV editor</title>
+  <link rel="stylesheet" href="./ui.css">
+  <link rel="stylesheet" href="./styles.css">
 </head>
-
 <body>
-  <a class="github-fork-ribbon" href="https://https://github.com/Praneeth-rdy/cvGenerator"
-    data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
-  <div class="main-container d-flex flex-column justify-content-between">
-    <div id="page-status" class="alert alert-success d-none justify-content-between pl-4 pr-4 align-items-center"
-      role="alert">
-      <span></span>
-      <i class="fa fa-times" onclick="toggleFormStatusDisplay('hide')"></i>
-    </div>
-    <div class="cv-list-section container py-3">
-      <div class="row">
-        <h1 class="col-12">CV Templates</h1>
+  <a class="skip-link" href="#templates">Skip to templates</a>
+  <header class="site-header page-width">
+    <a class="brand" href="./index.html" aria-label="CV Buddy home"><span>CV Buddy</span></a>
+    <a class="source-link" href="https://github.com/praneeth-rdy/CV-Buddy">Contribute on GitHub <span aria-hidden="true">↗</span></a>
+  </header>
+  <main class="home-layout page-width">
+    <section class="templates-section" id="templates" aria-labelledby="templates-title">
+      <div class="page-intro"><p class="eyebrow">Free & open source</p><h1 id="templates-title">Create your CV.</h1><p>Choose a template, edit your details, and save a PDF.<br>No account needed. Drafts save in your browser.</p></div>
+      <div class="template-grid">
+        <a class="template-card" href="./iitkgp/index.html" aria-label="Edit the Classic template, inspired by IIT Kharagpur">
+          <div class="template-preview preview-classic"><img src="./img/templates/classic.png" alt="Classic CV with shaded section headings" width="794" height="1123"></div>
+          <div class="template-info"><h2>Classic</h2><span aria-hidden="true">↗</span></div><p class="template-origin">IIT Kharagpur style</p>
+        </a>
+        <a class="template-card" href="./iitm/index.html" aria-label="Edit the Contemporary template, inspired by IIT Madras">
+          <div class="template-preview preview-modern"><img src="./img/templates/contemporary.png" alt="Contemporary CV with blue section headings" width="794" height="1123"></div>
+          <div class="template-info"><h2>Contemporary</h2><span aria-hidden="true">↗</span></div><p class="template-origin">IIT Madras style</p>
+        </a>
+        <a class="template-card" href="./iitb/index.html" aria-label="Edit the Editorial template, inspired by IIT Bombay">
+          <div class="template-preview preview-editorial"><img src="./img/templates/editorial.png" alt="Editorial CV with serif type and ruled section headings" width="794" height="1123"></div>
+          <div class="template-info"><h2>Editorial</h2><span aria-hidden="true">↗</span></div><p class="template-origin">IIT Bombay style</p>
+        </a>
       </div>
-      <div class="row">
-        <div class="col-4">
-          <a class="btn btn-primary iits-cv-btn" href="./iitkgp/index.html">
-            Template-1
-          </a>
-        </div>
-        <div class="col-4">
-          <a class="btn btn-primary iits-cv-btn" href="./iitm/index.html">
-            Template-2
-          </a>
-        </div>
-        <div class="col-4">
-          <a class="btn btn-primary iits-cv-btn" href="./iitb/index.html">
-            Template-3
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="form-section container">
-      <h1 class="section-heading">Contribute your part, by filling this feedback form</h1>
-      <form id="ajax-form" autocomplete="on"
-        data-id="AKfycbzZZy0EognH5aUyPpTo76O-Llct5ovCngguEK7UdvpXID7TzZRqNxy7lbqchEZGMpWX7w">
-        <div class="form-row">
-          <div class="col-md-6 mb-3">
-            <label for="name">Name (optional)</label>
-            <input type="name" class="form-control" id="name" name="name" placeholder="Enter name">
-            <!-- <div class="valid-feedback">
-                    Looks good!
-                  </div> -->
-          </div>
-          <div class="col-md-6 mb-3">
-            <label for="mobile">Mobile Number (optional)</label>
-            <input type="tel" class="form-control" id="mobile" name="mobile" placeholder="Enter mobile number">
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="col-md-6 mb-3">
-            <label for="email">Email (optional)</label>
-            <!-- <div class="input-group-prepend">
-                      <span class="input-group-text" id="inputGroupPrepend3">@</span>
-                    </div> -->
-            <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
-            <!-- <div class="invalid-feedback">
-                      Please choose a username.
-                    </div> -->
-          </div>
-          <div class="col-md-6 mb-3">
-            <label for="subject">Subject</label>
-            <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter subject" required>
-            <!-- <div class="valid-feedback">
-                    Looks good!
-                  </div> -->
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="col-md-12 mb-3">
-            <label for="message">Feedback</label>
-            <textarea class="form-control" id="message" name="message" rows="6"
-              placeholder="How useful is this platform for you? Do you want more CV templates to be added here? What are the changes you want to see in the future updates? Did you find any bugs? or have faced any issue while using the cv templates?"
-              required></textarea>
-          </div>
-        </div>
-        <button class="btn btn-primary" type="submit">Submit form</button>
+      <p class="template-note">Click a template to start editing. The sample profiles are fictional.<br>Anyone can use these templates; they are not official institute documents.</p>
+    </section>
+    <section class="feedback-section" aria-labelledby="feedback-title">
+      <h2 id="feedback-title">Feedback & suggestions</h2><p class="feedback-intro">Found a bug or have an idea? Let us know.</p>
+      <form id="ajax-form" data-id="AKfycbzZZy0EognH5aUyPpTo76O-Llct5ovCngguEK7UdvpXID7TzZRqNxy7lbqchEZGMpWX7w">
+        <div class="form-grid"><label>Name <span>(optional)</span><input id="name" name="name" autocomplete="name" placeholder="Your name"></label><label>Email <span>(optional)</span><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com"></label></div>
+        <div class="form-grid"><label>Mobile <span>(optional)</span><input id="mobile" name="mobile" type="tel" autocomplete="tel" placeholder="Your mobile number"></label><label>Subject<input id="subject" name="subject" required placeholder="What’s on your mind?"></label></div>
+        <label>Message<textarea id="message" name="message" rows="4" required placeholder="Tell us what worked, what didn’t, or what’s missing."></textarea></label>
+        <div id="page-status" role="status" hidden></div>
+        <button class="button button-primary" type="submit">Send feedback <span aria-hidden="true">↗</span></button>
+        <p class="form-note">You can also <a href="https://github.com/praneeth-rdy/CV-Buddy/issues">open an issue on GitHub</a>.</p>
       </form>
-    </div>
-    <!-- <div class="external my-2 text-center">
-      Link to <a href="https://nandanaforvp.github.io/">#Nandana_for_VP</a>
-    </div> -->
-    <div class="footer d-flex flex-column text-center mt-4">
-      <div>Made with <i class="fa fa-heart"></i> by <a href="https://github.com/Praneeth-rdy">praneeth-rdy</a></div>
-      <div class="social-icons-container my-3">
-        <a href="https://www.facebook.com/praneeth.reddy.3557440">
-          <i class="fab fa-facebook"></i>
-        </a>
-        <a href="https://www.instagram.com/praneeth__rdy/">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/praneeth-/">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="mailto:praneeth.kolanu.iitkgp@gmail.com">
-          <i class="fa fa-envelope"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-  <script type="text/javascript" src="./global.js"></script>
-  <script type="text/javascript" src="./main.js"></script>
+    </section>
+  </main>
+  <footer class="site-footer page-width"><p>An open-source project by <a href="https://github.com/praneeth-rdy">Praneeth Reddy</a>.</p><div><a href="./docs/CONTRIBUTING.md">Contributing</a><a href="./LICENSE.md">GPL-3.0 license</a></div></footer>
+  <script src="./main.js"></script>
 </body>
-
 </html>
