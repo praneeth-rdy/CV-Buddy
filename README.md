@@ -41,6 +41,7 @@
             </li>
         </ul>
     </li>
+    <li><a href="#developer-documentation">Developer Documentation</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
@@ -72,22 +73,33 @@ A list of commonly used resources that I find helpful are listed in the acknowle
 You won't be needing to download or install anything, to get started with this project.
 Just visit [https://praneeth-rdy.github.io/CV-Buddy](https://praneeth-rdy.github.io/CV-Buddy) and play with editor. That's as simple as that!
 
+To work locally, open `index.html` directly in your browser. There is no build step or package installation. The homepage and CV editor run without a backend. Template fonts load from Google Fonts; sending feedback also requires an internet connection.
+
+Optionally, serve the repository with `python3 -m http.server 8000 --bind 127.0.0.1` and visit `http://127.0.0.1:8000`. Browser drafts may be stored separately for local files and server URLs. Keep using the same URL to return to a draft, and save a PDF before clearing browser data.
+
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
 - Open the website [https://praneeth-rdy.github.io/CV-Buddy](https://praneeth-rdy.github.io/CV-Buddy).
-- You will be displayed multiple CV templates. Select a template you like.
-- Click on edit. Now you can edit the content of the CV directly. 
-- Remove the campus logo, if you are not a kgpian.
-- Click on save, to continue working on it later.
-- Click on reset, to reset the cv to initial template.
-- Click on download, see the preview and save it as a pdf. 
-- Boom!! Your cv is ready to use.
-- Now, share your feedback and experience on the homepage.
+- Choose Classic, Contemporary, or Editorial. Each starts with a fictional sample profile.
+- Click text in the CV to replace it with your details. Changes save automatically in this browser; check the save status in the toolbar.
+- Edit the whole document naturally: Enter continues a bullet list, formatted blocks can be copied and pasted, and the browser's undo/redo and formatting shortcuts work directly in the CV.
+- Use Options to choose a font and a Small, Medium, or Large style. Each template recommends its own defaults; your choices save with the draft. Photo controls and the institute-logo toggle are also available where supported.
+- Open Options → Editing help & shortcuts for formatting keys, list editing, block copy/paste, and optional browser-assistant guidance.
+- Edit directly on the final CV layout; there is no separate preview mode or zoom control. The page fits the available screen width automatically, using the same document typography, colors, width, and padding as print.
+- Choose Print / Save PDF, select A4, and turn off browser headers and footers. Check the page breaks before saving; longer CVs can span multiple pages.
+- To start again, use Options → Reset to sample. Confirm the reset, or cancel to keep editing. Options → Restore before last reset recovers the previous draft.
+- Share feedback using the form on the homepage, or open an issue on GitHub.
+
+Drafts are saved separately for each template. Existing saved drafts are retained when the sample profiles change. Browser storage is not a cloud backup and can become unavailable or full; the editor displays a warning if it cannot save.
 
 <!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
 
+
+## Developer Documentation
+
+Start with [docs/README.md](docs/README.md) for architecture, product decisions, local development, storage and print behavior, and the regression checklist. Contributors should read these guides before changing editor behavior.
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -107,12 +119,12 @@ Contributions are what make the open source community such an amazing place to b
 1. Go to the issues tab and check if there's any existing issue with similar lines.
 2. If there's no existing issue, create an issue following [this](issue_template.md) template.
 
-#### Refer to [CONTRIBUTING.md](CONTRIBUTING.md) for other instructions.
+#### Refer to [CONTRIBUTING.md](docs/CONTRIBUTING.md) for other instructions.
 
 <!-- LICENSE -->
 ## License
 
-Distributed under the GNU GPL v3.0 License. See `LICENSE` for more information.
+Distributed under the GNU GPL v3.0 License. See [LICENSE.md](LICENSE.md) for more information.
 
 
 

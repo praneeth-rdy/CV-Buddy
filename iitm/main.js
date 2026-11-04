@@ -1,19 +1,14 @@
-
-function initCv() {
-    cvData = JSON.parse(localStorage.getItem('iitmCvData'));
-    if(cvData){
-        cv.innerHTML = cvData;
-    }
-}
-
-initCv();
-
-$('#saveCv').on('click', (event) => {
-    cv.removeAttribute('contenteditable');
-    localStorage.setItem('iitmCvData', JSON.stringify(cv.innerHTML));
-});
-
-$('#resetCv').on('click', (event) => {
-    localStorage.removeItem('iitmCvData');
-    location.reload();
+CVBuddyEditor.init({
+  storageKey: 'iitmCvData',
+  name: 'IIT Madras',
+  typography: {
+    recommendedSize: 'medium',
+    recommendedFont: 'arial',
+    legacyFont: 'varela-round',
+    fonts: [
+      { id: 'arial', label: 'Arial' },
+      { id: 'varela-round', label: 'Varela Round' },
+      { id: 'georgia', label: 'Georgia' }
+    ]
+  }
 });

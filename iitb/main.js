@@ -1,19 +1,14 @@
-
-function initCv() {
-    cvData = JSON.parse(localStorage.getItem('iitbCvData'));
-    if(cvData){
-        cv.innerHTML = cvData;
-    }
-}
-
-initCv();
-
-$('#saveCv').on('click', (event) => {
-    cv.removeAttribute('contenteditable');
-    localStorage.setItem('iitbCvData', JSON.stringify(cv.innerHTML));
-});
-
-$('#resetCv').on('click', (event) => {
-    localStorage.removeItem('iitbCvData');
-    location.reload();
+CVBuddyEditor.init({
+  storageKey: 'iitbCvData',
+  name: 'IIT Bombay',
+  typography: {
+    recommendedSize: 'medium',
+    recommendedFont: 'eb-garamond',
+    legacyFont: 'eb-garamond',
+    fonts: [
+      { id: 'eb-garamond', label: 'EB Garamond' },
+      { id: 'times', label: 'Times New Roman' },
+      { id: 'arial', label: 'Arial' }
+    ]
+  }
 });
